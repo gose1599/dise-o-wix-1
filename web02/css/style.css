@@ -1,0 +1,79 @@
+/*FUENTE*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+    --primario: #000;
+    --secundario: #c6ad73 ;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*CONTENEDOR*/
+.contenedor{
+    max-width: 128rem;
+    margin: auto;
+    width: 50%;
+}
+
+/*NAVEGACION*/
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 6rem;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    margin-right: 2.5rem;
+    font-size: 1rem;
+    color: var(--primario);
+}
+
+ul li{
+    list-style: none;
+}
+
+hr{
+    height: 1px;
+    background-color: var(--primario);
+    border-color: var(--primario);
+}
+
+ul li a:hover{
+    color: var(--secundario);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+/*CONTENIDO HERO*/
+
+/*.hero{
+    height: 40rem;
+}
+*/
+section{
+}
+.hero{
+    background-image: url(../img/img1.jpg);
+    background-repeat: no-repeat, repeat;
+}
+.titulo{
+    font-size:5rem;
+    text-align: center;
+    color: var(--secundario);
+}
