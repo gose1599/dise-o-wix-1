@@ -1,12 +1,23 @@
 /*FUENTE*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-:root{
-    --primario: #000;
-    --secundario: #c6ad73 ;
-
+/*TAMAÑO DE REM*/
+html{
+    font-size: 62.5%;
 }
 
+body{
+    font-size: 16px; /*1rem = 10px*/
+}
+
+/*VARIABLES*/
+:root{
+    --primario: #000;
+    --secundario: #f3ae28 ;
+    --claro: #fff;
+}
+
+/*GENERAL*/
 *{
     margin: 0;
     padding: 0;
@@ -18,26 +29,26 @@
 .contenedor{
     max-width: 128rem;
     margin: auto;
-    width: 50%;
+    width: 90%;
 }
 
 /*NAVEGACION*/
 header{
     display: flex;
     justify-content: space-between;
-    margin: 1rem 6rem;
+    margin: 2.5rem 6rem;
     align-items: center;
 }
 
 header .logo{
-    font-size: 3rem;
+    font-size: 5rem;
     cursor: pointer;
 }
 
 ul li a{
     text-decoration: none;
-    margin-right: 2.5rem;
-    font-size: 1rem;
+    margin-right: 3.5rem;
+    font-size: 1.5rem;
     color: var(--primario);
 }
 
@@ -61,19 +72,88 @@ ul li a:hover{
 }
 
 /*CONTENIDO HERO*/
-
-/*.hero{
-    height: 40rem;
-}
-*/
-section{
-}
 .hero{
-    background-image: url(../img/img1.jpg);
-    background-repeat: no-repeat, repeat;
+    position: relative;
 }
-.titulo{
-    font-size:5rem;
+
+.hero::after{
+    position:absolute;
+    content: 'Sara Velasco';
+    color: var(--primario);
+    font-size: 12rem;
+    top: 20%;
+    right: 21%;
+}
+
+.position-hero{
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/img1.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30rem;
+    height: 50rem;
+    margin: 10rem auto;
+    border-radius: 200px 200px 10px 10px;
+    -moz-border-radio: 200px 200px 10px 10px;
+    -webkit-border-radio: 200px 200px 10px 10px;
+    -webkit-border-radius: 200px 200px 10px 10px;
+    -moz-border-radius: 200px 200px 10px 10px;
+    -ms-border-radius: 200px 200px 10px 10px;
+    -o-border-radius: 200px 200px 10px 10px;
+}
+
+.position-hero::before{
+    position: absolute;
+    content: '*';
+    font-size: 50rem;
+    top: -33%;
+    left: 24%;
+}
+
+
+.contenido-hero{
+    color: var(--claro);
+    position: absolute;
+    bottom: 23%;
+    left: 12%;
+}
+
+
+.contenido-hero .p-hero{
+    display: flex;
+}
+
+.p-hero p{
+    margin-right: 3rem;
+    align-items: center;
+
+}
+
+/*MAIN*/
+main .Sobre-mi{
+    margin-top: 20rem;
+    font-size: 4.5rem;
     text-align: center;
-    color: var(--secundario);
+    line-height: 7rem;
+    width: 45%;
+    margin-bottom: 15rem;
 }
+
+section p{
+    margin-bottom: 3rem;
+}
+
+.Sobre-mi .boton{
+    background-color: var(--claro);
+    color: var(--primario);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1.5rem 6rem;
+    border: 1px solid var(--primario);
+    border-radius: 100px 100px 100px 100px;
+    -moz-border-radius: 100px 100px 100px 100px;
+    -webkit-border-radius: 100px 100px 100px 100px;
+}
+
+/*CONTENEDOR*/
+
