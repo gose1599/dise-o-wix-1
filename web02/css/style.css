@@ -119,6 +119,7 @@ ul li a:hover{
 }
 
 
+
 .contenido-hero .p-hero{
     display: flex;
 }
@@ -126,8 +127,8 @@ ul li a:hover{
 .p-hero p{
     margin-right: 3rem;
     align-items: center;
-
 }
+
 
 /*MAIN*/
 main .Sobre-mi{
@@ -148,11 +149,21 @@ section p{
     color: var(--primario);
     text-decoration: none;
     font-size: 1.5rem;
-    padding: 1.5rem 6rem;
+    padding: 1.2rem 5rem;
     border: 1px solid var(--primario);
     border-radius: 100px 100px 100px 100px;
     -moz-border-radius: 100px 100px 100px 100px;
     -webkit-border-radius: 100px 100px 100px 100px;
+}
+
+.Sobre-mi .boton:hover{
+    color: var(--claro);
+    background-color: var(--primario);
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
 }
 
 /*CONTENEDOR*/
