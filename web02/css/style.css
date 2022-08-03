@@ -32,6 +32,9 @@ body{
     width: 90%;
 }
 
+
+
+
 /*NAVEGACION*/
 header{
     display: flex;
@@ -167,4 +170,52 @@ section p{
 }
 
 /*CONTENEDOR*/
+.mis-trabajos h2{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 8rem;
+}
 
+.mis-trabajos div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-bold{
+    font-weight: 600;
+    font-size:2rem ;
+}
+
+.p-clic{
+    width: 31%;
+    line-height: 3rem;
+}
+
+.mis-trabajos .banner-1{
+    margin: 2rem 0 25rem 0;
+    width: 128rem;
+    -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    cursor: pointer;
+}
+
+/*PHOTO*/
+.flex-img{
+    display: flex;
+    gap: 3rem;
+}
+.flex-img img{
+    width: 42.7rem;
+    height: 54.7rem;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    cursor: pointer;
+    margin: 2rem 0 25rem 0;
+}
+
+/*VIDEO*/
+.iframe{
+    margin: 0 5rem;
+}
