@@ -1,0 +1,464 @@
+/*FUENTE*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*TAMAÑO DE REM*/
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px; /*1rem = 10px*/
+}
+
+/*VARIABLES*/
+:root{
+    --primario: #000;
+    --secundario: #f3ae28 ;
+    --claro: #fff;
+}
+
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*CONTENEDOR*/
+.contenedor{
+    max-width: 128rem;
+    margin: auto;
+    width: 90%;
+}
+
+.vh{
+    background-color:#f6f5f5;
+    height: 100vh;
+}
+
+
+
+/*NAVEGACION*/
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6rem;
+    padding: 2.2rem;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--primario);
+}
+
+ul li a{
+    text-decoration: none;
+    margin-right: 3.5rem;
+    font-size: 1.5rem;
+    color: var(--primario);
+}
+
+ul li{
+    list-style: none;
+}
+
+hr{
+    height: 1px;
+    background-color: var(--primario);
+    border-color: var(--primario);
+}
+
+ul li a:hover{
+    color: var(--secundario);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+/*CONTENIDO HERO*/
+.hero{
+    position: relative;
+}
+
+.hero::after{
+    position:absolute;
+    content: 'Sara Velasco';
+    color: var(--primario);
+    font-size: 12rem;
+    top: 20%;
+    right: 21%;
+}
+
+.position-hero{
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/img1.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30rem;
+    height: 50rem;
+    margin: 10rem auto;
+    border-radius: 200px 200px 10px 10px;
+    -moz-border-radio: 200px 200px 10px 10px;
+    -webkit-border-radio: 200px 200px 10px 10px;
+    -webkit-border-radius: 200px 200px 10px 10px;
+    -moz-border-radius: 200px 200px 10px 10px;
+    -ms-border-radius: 200px 200px 10px 10px;
+    -o-border-radius: 200px 200px 10px 10px;
+}
+
+.position-hero::before{
+    position: absolute;
+    content: '*';
+    font-size: 50rem;
+    top: -33%;
+    left: 24%;
+}
+
+
+.contenido-hero{
+    color: var(--claro);
+    position: absolute;
+    bottom: 23%;
+    left: 12%;
+}
+
+
+
+.contenido-hero .p-hero{
+    display: flex;
+}
+
+.p-hero p{
+    margin-right: 3rem;
+    align-items: center;
+}
+
+
+/*MAIN*/
+main .Sobre-mi{
+    margin-top: 20rem;
+    font-size: 4.5rem;
+    text-align: center;
+    line-height: 7rem;
+    width: 45%;
+    margin-bottom: 15rem;
+}
+
+section p{
+    margin-bottom: 3rem;
+}
+
+.Sobre-mi .boton{
+    background-color: var(--claro);
+    color: var(--primario);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1.2rem 5rem;
+    border: 1px solid var(--primario);
+    border-radius: 100px 100px 100px 100px;
+    -moz-border-radius: 100px 100px 100px 100px;
+    -webkit-border-radius: 100px 100px 100px 100px;
+}
+
+.Sobre-mi .boton:hover{
+    color: var(--claro);
+    background-color: var(--primario);
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+}
+
+/*CONTENEDOR*/
+.mis-trabajos h2{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 8rem;
+}
+
+.mis-trabajos div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-bold{
+    font-weight: 600;
+    font-size:2rem ;
+}
+
+.p-clic{
+    width: 31%;
+    line-height: 3rem;
+}
+
+.mis-trabajos .banner-1{
+    margin: 2rem 0 25rem 0;
+    width: 128rem;
+    -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    cursor: pointer;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/*PHOTO*/
+.flex-img{
+    display: flex;
+    gap: 3rem;
+}
+.flex-img .photo{
+    width: 42.7rem;
+    height: 54.7rem;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    cursor: pointer;
+    margin: 2rem 0 25rem 0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/*VIDEO*/
+video{
+    border-radius: 25px;
+    margin: 2rem 0 25rem 0;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    cursor: pointer;
+}
+
+/*CONTENIDO-UX*/
+.flex-ux{
+    display: flex;
+    gap: 4rem;
+}
+
+.flex-ux .ux{
+    width: 61rem;
+    height: 113rem;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    cursor: pointer;
+    margin: 2rem 0 25rem 0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/*CONTENIDO-APP*/
+.app{
+    width: 128rem;
+    height: 80rem;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.41);
+    cursor: pointer;
+    margin: 2rem 0 25rem 0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+/*CONTENIDO-REDES SOCIALES*/
+.redes div .info{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--primario);
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    margin: 5rem 0;
+}
+
+.redes ul{
+    text-align: center;
+}
+
+.redes ul li a{
+    margin: 0 2.5rem;
+}
+
+
+/*CONTENIDO FOOTER*/
+footer{
+    background-color: var(--primario);
+    color: var(--claro);
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+}
+
+footer p{
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+/*--------------------PAGINA PERFIL------------------*/
+
+/*CONTENIDO contacto*/
+.contenido-perfil{
+    display: flex;
+    margin-top: 10rem;
+}
+
+.contenido-perfil .perfil{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.contenido-perfil .perfil h2{
+    font-size: 10rem;
+}
+
+.contenido-perfil .perfil p{
+    line-height:2.8rem ;
+    width: 62%;
+    text-align: justify;
+}
+
+.contenido-perfil .img-perfil img{
+    height: 70rem;
+    width: 60rem;
+    object-fit: cover;
+}
+
+/*CONTENIDO COMPETENCIAS*/
+.competencias{
+    margin-top: 20rem;
+    font-size: 4.5rem;
+    text-align: center;
+    line-height: 7rem;
+    width: 54%;
+    margin-bottom: 15rem;
+}
+
+.competencias h3{
+    margin-bottom: 6.5rem ;
+    font-size: 4rem;
+}
+
+
+/*CONTENIDO EXPERIENCIA*/
+.experiencia h3{
+    margin-top: 22rem;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 0 22rem 0;
+    text-align: center;
+}
+
+.experiencia .grid div{
+    margin: 3rem 5rem;
+}
+
+.experiencia .grid div p{
+    line-height: 2.6rem;
+    margin: 3rem;
+}
+
+
+/*CONTENIDO HERRAMIENTAS*/
+.herramientas h3{
+    margin-top: 22rem;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20rem;
+}
+
+.contenido-herra{
+    margin-bottom: 10rem;
+}
+
+
+
+
+/*--------------------PAGINA CONTACTO------------------*/
+
+/*CONTENIDO CONTACTO*/
+.contenido-contacto{
+    display: flex;
+    margin-top: 10rem;
+}
+
+.contenido-contacto .contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.contenido-contacto .contacto h2{
+    font-size: 10rem;
+    width: 55rem;
+}
+
+.contenido-contacto .contacto p{
+    line-height:2.8rem ;
+    width: 62%;
+    text-align: justify;
+}
+
+.contenido-contacto .img-contacto img{
+    height: 70rem;
+    width: 60rem;
+    object-fit: cover;
+}
+
+
+
+/*CONTENIDO FORMULARIO*/
+.formulario fieldset{
+    border: none;
+}
+
+.contenedor-campos{
+    display: grid;
+}
+
+
+
+
+
+
